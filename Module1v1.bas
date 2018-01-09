@@ -7,7 +7,7 @@ Attribute Zmiany.VB_ProcData.VB_Invoke_Func = " \n14"
 
 '
     
-    Application.ScreenUpdating = False
+    'Application.ScreenUpdating = False
     
     Columns("E:I").Select
     Selection.Delete Shift:=xlToLeft
@@ -86,58 +86,58 @@ dalej:
         ReplaceFormat:=False
         
     
-    Selection.Replace What:="Í", Replacement:="e", LookAt:=xlPart, _
+    Selection.Replace What:="ƒô", Replacement:="e", LookAt:=xlPart, _
         SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
         ReplaceFormat:=False
-    Selection.Replace What:=" ", Replacement:="E", LookAt:=xlPart, _
+    Selection.Replace What:="ƒò", Replacement:="E", LookAt:=xlPart, _
         SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
         ReplaceFormat:=False
-    Selection.Replace What:="Û", Replacement:="o", LookAt:=xlPart, _
+    Selection.Replace What:="√≥", Replacement:="o", LookAt:=xlPart, _
         SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
         ReplaceFormat:=False
-    Selection.Replace What:="”", Replacement:="O", LookAt:=xlPart, _
+    Selection.Replace What:="√ì", Replacement:="O", LookAt:=xlPart, _
         SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
         ReplaceFormat:=False
-    Selection.Replace What:="π", Replacement:="a", LookAt:=xlPart, _
+    Selection.Replace What:="ƒÖ", Replacement:="a", LookAt:=xlPart, _
         SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
         ReplaceFormat:=False
-    Selection.Replace What:="•", Replacement:="A", LookAt:=xlPart, _
+    Selection.Replace What:="ƒÑ", Replacement:="A", LookAt:=xlPart, _
         SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
         ReplaceFormat:=False
-    Selection.Replace What:="ú", Replacement:="s", LookAt:=xlPart, _
+    Selection.Replace What:="≈õ", Replacement:="s", LookAt:=xlPart, _
         SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
         ReplaceFormat:=False
-    Selection.Replace What:="å", Replacement:="S", LookAt:=xlPart, _
+    Selection.Replace What:="≈ö", Replacement:="S", LookAt:=xlPart, _
         SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
         ReplaceFormat:=False
-    Selection.Replace What:="≥", Replacement:="l", LookAt:=xlPart, _
+    Selection.Replace What:="≈Ç", Replacement:="l", LookAt:=xlPart, _
         SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
         ReplaceFormat:=False
-    Selection.Replace What:="£", Replacement:="L", LookAt:=xlPart, _
+    Selection.Replace What:="≈Å", Replacement:="L", LookAt:=xlPart, _
         SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
         ReplaceFormat:=False
-    Selection.Replace What:="ø", Replacement:="z", LookAt:=xlPart, _
+    Selection.Replace What:="≈º", Replacement:="z", LookAt:=xlPart, _
         SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
         ReplaceFormat:=False
-    Selection.Replace What:="ü", Replacement:="z", LookAt:=xlPart, _
+    Selection.Replace What:="≈∫", Replacement:="z", LookAt:=xlPart, _
         SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
         ReplaceFormat:=False
-    Selection.Replace What:="Ø", Replacement:="Z", LookAt:=xlPart, _
+    Selection.Replace What:="≈ª", Replacement:="Z", LookAt:=xlPart, _
         SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
         ReplaceFormat:=False
-    Selection.Replace What:="è", Replacement:="Z", LookAt:=xlPart, _
+    Selection.Replace What:="≈π", Replacement:="Z", LookAt:=xlPart, _
         SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
         ReplaceFormat:=False
-    Selection.Replace What:="Ê", Replacement:="c", LookAt:=xlPart, _
+    Selection.Replace What:="ƒá", Replacement:="c", LookAt:=xlPart, _
         SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
         ReplaceFormat:=False
-    Selection.Replace What:="∆", Replacement:="C", LookAt:=xlPart, _
+    Selection.Replace What:="ƒÜ", Replacement:="C", LookAt:=xlPart, _
         SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
         ReplaceFormat:=False
-    Selection.Replace What:="Ò", Replacement:="n", LookAt:=xlPart, _
+    Selection.Replace What:="≈Ñ", Replacement:="n", LookAt:=xlPart, _
         SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
         ReplaceFormat:=False
-    Selection.Replace What:="—", Replacement:="N", LookAt:=xlPart, _
+    Selection.Replace What:="≈É", Replacement:="N", LookAt:=xlPart, _
         SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
         ReplaceFormat:=False
     Selection.Replace What:=" - ", Replacement:="-", LookAt:=xlPart, _
@@ -188,6 +188,73 @@ dalej:
     Range("C1").Value = "numer telefonu"
     Range("A1").Select
     
-    Application.ScreenUpdating = True
+    
+    Columns("D:D").Select
+    Selection.Replace What:="1.", Replacement:="1", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Selection.Replace What:="2.", Replacement:="2", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
+        ReplaceFormat:=False
+            Selection.Replace What:="3.", Replacement:="3", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
+        ReplaceFormat:=False
+            Selection.Replace What:="4.", Replacement:="4", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
+        ReplaceFormat:=False
+            Selection.Replace What:="5.", Replacement:="5", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
+        ReplaceFormat:=False
+            Selection.Replace What:="6.", Replacement:="6", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
+        ReplaceFormat:=False
+            Selection.Replace What:="7.", Replacement:="7", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
+        ReplaceFormat:=False
+            Selection.Replace What:="8.", Replacement:="8", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
+        ReplaceFormat:=False
+            Selection.Replace What:="9.", Replacement:="9", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
+        ReplaceFormat:=False
+        Selection.Replace What:="0.", Replacement:="0", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
+        ReplaceFormat:=False
+        Selection.Replace What:=":", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
+        ReplaceFormat:=False
+        Selection.Replace What:="(", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
+        ReplaceFormat:=False
+        Selection.Replace What:=")", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
+        ReplaceFormat:=False
+        Selection.Replace What:="/", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
+        ReplaceFormat:=False
+        Selection.Replace What:="@", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
+        ReplaceFormat:=False
+        Selection.Replace What:="&", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
+        ReplaceFormat:=False
+        Selection.Replace What:="!", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
+        ReplaceFormat:=False
+        Selection.Replace What:="#", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
+        ReplaceFormat:=False
+        
+        
+        
+        Range("d2:D" & r).Select
+        For Each cell In Selection
+        If Not cell.HasFormula Then
+            cell.Value = UCase(cell.Value)
+        End If
+    Next cell
+
+        
+    'Application.ScreenUpdating = True
     
 End Sub
