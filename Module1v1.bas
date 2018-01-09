@@ -7,7 +7,7 @@ Attribute Zmiany.VB_ProcData.VB_Invoke_Func = " \n14"
 
 '
     
-    'Application.ScreenUpdating = False
+    Application.ScreenUpdating = False
     
     Columns("E:I").Select
     Selection.Delete Shift:=xlToLeft
@@ -252,9 +252,35 @@ dalej:
         If Not cell.HasFormula Then
             cell.Value = UCase(cell.Value)
         End If
-    Next cell
+        Next cell
+
+
+    Dim strPattern As String: strPattern = "([A-Z])([0-9])"
+    Dim strReplace As String: strReplace = "$1.$2"
+    
+    Dim regex As VBScript_RegExp_55.RegExp
+    Set regex = New VBScript_RegExp_55.RegExp
+    Dim strInput As String
+    Dim Myrange As Range
+
+    Set Myrange = ActiveSheet.Range("d2:D" & r)
+
+    For Each cell In Myrange
+        If strPattern <> "" Then
+            strInput = cell.Value
+
+            With regex
+                .Global = True
+                .MultiLine = True
+                .IgnoreCase = False
+                .Pattern = strPattern
+            End With
+            cell.Value = regex.Replace(cell.Value, strReplace)
+            
+        End If
+    Next
 
         
-    'Application.ScreenUpdating = True
+    Application.ScreenUpdating = True
     
 End Sub
