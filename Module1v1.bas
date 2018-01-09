@@ -247,13 +247,14 @@ dalej:
         
         
         
-        Range("d2:D" & r).Select
+        Range("D2:D" & r).Select
         For Each cell In Selection
         If Not cell.HasFormula Then
             cell.Value = UCase(cell.Value)
         End If
         Next cell
 
+'regex
 
     Dim strPattern As String: strPattern = "([A-Z])([0-9])"
     Dim strReplace As String: strReplace = "$1.$2"
@@ -280,6 +281,25 @@ dalej:
         End If
     Next
 
+'wersja 2 - pętlą
+
+'Dim iChar, a As Integer
+'Range("D:D").Select
+'For iChar = 65 To 90
+'
+'    For a = 0 To 9
+'    szukaj = Chr(iChar) & a
+'    zamien = Chr(iChar) & "." & a
+'    Selection.Replace What:=szukaj, Replacement:=zamien, LookAt:=xlPart, _
+'    SearchOrder:=xlByRows, MatchCase:=True, SearchFormat:=False, _
+'    ReplaceFormat:=False
+'
+'    Next
+'
+'Next iChar
+        
+        
+        
         
     Application.ScreenUpdating = True
     
